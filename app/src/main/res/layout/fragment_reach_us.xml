@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ReachUsFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_border"
+    android:text="Mr. Mukesh Kumar\n Sr. AGM - Engg , Industrial Engineering\n Air India Engineering Services Ltd.\nOld Airport,Santacruz East,/n Mumbai-400 029\nTel : +91 22 26263479\nEmail : sales.aiesl@airindia.in\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_border"
+    android:text="Mr. Shashank Shekhar\n Senior Executive-Marketing\n Air India Engineering Services Ltd.\n 2nd Floor,CRA Building,Safdarjung Airport Complex\n New Delhi-110003\n Tel:+91-11-24600777\nE-Mail: sales.aiesl@airindia.in\n"/>
+
+</LinearLayout>

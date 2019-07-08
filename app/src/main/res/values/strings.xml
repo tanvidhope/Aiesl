@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">airindiaengg</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="reachUs1">Mr. Mukesh Kumar\n Sr. AGM - Engg , Industrial Engineering\n Air India Engineering Services Ltd.\nOld Airport,Santacruz East,/n Mumbai-400 029\nTel : +91 22 26263479\nEmail : sales.aiesl@airindia.in\n</string>
+
+
+</resources>

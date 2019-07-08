@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:background="#f4e3c7">
+
+    <ScrollView android:layout_marginTop="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!--[zoom,flow,depth,slide_over]-->
+    <com.synnapps.carouselview.CarouselView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:pageColor="#000000"
+        app:fillColor="#FFFFFF"
+        app:slideInterval="3000"
+        app:pageTransformer="flow"
+        app:pageTransformInterval="3000"
+        app:radius="6dp"
+        app:strokeColor="#FF7777"
+        app:strokeWidth="1dp"
+        android:id="@+id/carousel"
+        >
+
+    </com.synnapps.carouselview.CarouselView>
+
+<!--##########################################################################################-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.FragmentContent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#cf2436"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Services"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/lm2"
+                android:id="@+id/lmCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Line Maintenance"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/bm"
+                android:id="@+id/bmCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Base Maintenance"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/ae"
+                android:id="@+id/aeCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="APU and Engine"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/com"
+                android:id="@+id/comCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="Component"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/aa"
+                android:id="@+id/aaCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="Avionic Accessories"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/lg"
+                android:id="@+id/lgCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="Landing Gear"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/et"
+                android:id="@+id/etCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="Engineering Training"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/ss"
+                android:id="@+id/ssCard"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="Specialized Services"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
